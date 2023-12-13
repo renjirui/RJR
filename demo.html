@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamy</title>
+    <style>
+        *{
+        margin:0;
+        padding:0;
+    }
+    .lamy_title{
+        position: relative;
+        width:100%;
+        height: 400px;
+        background-color: blue;
+        background: 250px  url(pen.png) no-repeat;
+    }
+    .lamy_title_flex{
+        left: 18%;
+        width: 40%;
+        height: 50px;
+        position: relative;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .lan{
+        position: relative;
+        width: 150px;
+        height: 50px;
+        top: 20px;
+        left: 35%;
+        color:white;
+        font-size: 15px;
+    }
+    .lan ~ .lamy {
+        background-image: url(lg.png);
+        top: 0;  
+    }
+    .wcback{
+        position: relative;
+        width: 990px;
+        height: 250px;
+        top: 20px;
+        left: 207px;
+      background-image: url(wcback.png);
+    }
+    .wc{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        height: 280px;
+        width: 650px;
+        left: 20%;
+        top:20px;
+        background-color: tomato;
+    }
+    .wcimg{
+        position: relative;
+        height: 280px;
+        width: 233px;
+        background-color: saddlebrown;
+        background-image: url(wcimg.png);
+    }
+    .wctext{
+        position: relative;
+        height: 230px;
+        width: 387px;
+        padding-left: 30px;
+        padding-top: 50px;
+        background-color: whitesmoke;
+    }
+    .wctext p{
+        font-size: 13.5px;
+    }
+    .wcvd{
+        position: absolute;
+        height: 130px;
+        width: 200px;
+        bottom: -40px;
+        left:55px;
+        background: url(wcvd.png) no-repeat;
+    }
+    .series{
+        position: relative;
+        width: 946px;
+        height: 400px;
+        left: 250px;
+        top: 120px;
+        
+    }
+    .s_header{
+        position: relative;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .s_title1{
+        position:relative;
+        width: 50%;
+        height: 80px;
+        
+        
+    }
+    .s_title2{
+        position:relative;
+        width: 50%;
+        height: 80px;
+        
+    }
+    .s_title1 h1{
+        text-align: right;
+    }
+    .s_title2 h1{
+        font-weight: normal;
+        left: 5px;
+    }
+    .s_text{
+        position: relative;
+        width: 750px;
+        height: 200px;
+        left: 12%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .s_word{
+        position: relative;
+        height: 200px;
+        width: 240px;
+        font-size: 13px;
+        text-align: center;
+        
+    }
+    .s_button{
+        position: relative;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        top: 0%;
+        font-size: 15px;
+        color: white;
+        left: 430px;
+        background-image: url(back.png);
+        
+    }
+    .penback{
+        position: relative;
+        width: 990px;
+        height: 260px;
+        top: 100px;
+        left: 207px;
+      background-image: url(wcback.png);
+    }
+    .penimg{
+        position: absolute;
+       top: -436px;
+       left:-150px;
+       }
+    .form{
+        position: relative;
+        height: 250px;
+        width: 946px;
+        top: 100px;
+        left: 252px;
+        background-color: #6f6d6d;
+        
+    }   
+    .form_word{
+        position: relative;
+        height: 30px;
+        width: 200px;
+        left :380px;
+        top: 30px;
+        background: url(formproblem.png) no-repeat;
+
+    }
+    .form_remark{
+        position:relative ;
+        height: 200px;
+        width: 600px;
+        top:40px;
+        left:18%;
+        font-size: 13px;
+        text-align: center;
+        background:white; 
+        box-shadow: 1px 1px 0px rgba(0,0,0,0.3);
+        
+    }
+    .form_remark img{
+        position: absolute;
+        top:-200px;
+        left: -125px;
+    }
+    .form_remark p{
+        position: relative;
+        top: 100px;
+    }
+    .products{
+        position: relative;
+        height: 700px;
+        width: 650px;
+        top:200px;
+        left: 410px;
+        background-color: white;
+    }
+    .p_title{
+        position: relative;
+        height: 100px;
+        width: 650;
+        
+    }
+    .p_title img{
+        position: absolute;
+        top: -350px;
+        left: -370px;
+    }
+    .p_img{
+        position: relative;
+        height: 800px;
+        width: 600px;
+        top:-70px;
+        left:20px;
+        
+    }
+    .p_img img{
+        position: absolute;
+        top: -20px;
+        left:-200px;
+    }
+    .spbutton img{
+        position:absolute;
+        top:680px;
+        left:220px;
+    }
+    .news{
+        position: relative;
+        height:500px ;
+        width:960px ;
+        top:300px;
+        left: 270px;
+        
+    }
+    .newsback img{
+        position: relative;
+        height: 200px;
+        width: 960px;
+     
+
+    }
+    .newspen img{
+        position: relative;
+        top:-250px;
+        left: -20px;
+    }
+    .introduce img{
+        position: absolute;
+        top:570px;
+        left:400px;
+    }
+    .bigimg img{
+        position:relative;
+        height:700px;
+        width: 990px;
+        top:440px;
+        left:270px;
+    }
+    .copyright{
+        position: relative;
+        height:30px;
+        width: 990px;
+        top:430px;
+        left:270px;
+        background: whitesmoke;
+    }
+    .copyright p{
+        position: relative;
+        text-align: center;
+        font-size: 10px;
+        color:slategrey
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="lamy_title">
+        <div class="lamy_title_flex">
+            <div class="lan">新品推荐</div>
+            <div class="lan">在线购买产品</div>
+            <div class="lan lamy"></div>
+            <div class="lan">企业礼包</div>
+            <div class="lan">品牌介绍</div>
+        </div>
+    </div>
+    <div class="wcback">
+        <div class="wc">
+            <div class="wcimg"></div>
+            <div class="wctext">
+                <h2>Welcome to Lamy</h2>
+                <p>
+                    德国书写工具品牌LAMY始创人C•Josef Lamy于1930年在海德
+                    堡创立了欧瑟斯墨水笔制造厂.1952年，崭露头角的LAMY 流线
+                    型墨水笔，震撼问世, 彰显公司的创新敏锐触觉。1966年终于打<br/><br/>
+                    
+                    造出令人耳目一新的现代经典之作-LAMY 2000系列。产品撮合
+                    了聚碳酸酯与不锈钢材质，绝妙的配搭，使之从芸芸众生的书写
+                    工具中脱颖而出，时至今日，依然在市场具有影响力。
+                </p>
+            </div>
+            <div class="wcvd"></div>
+        </div>
+    </div>
+    <div class="series">
+        <div class="s_header">
+            <div class="s_title1"><h1>L A M Y</h1></div>
+            <div class="s_title2"><h1>各 系 列</h1></div>
+        </div>
+        <div class="s_text">
+            <div class="s_word">
+                <h3>【恒星系列 墨水笔 】</h3>
+                <br/>
+                <p>
+                    &nbsp;&nbsp;LAMY 恒星系列延续了 LAMY<br/>
+                    的时尚造型，打造出锦上添花的极致品质
+                    &nbsp;&nbsp;&nbsp;&nbsp;。此系列全部均由氧化<br/>
+                    &nbsp;独特的凹陷式笔握以及弹性铜线笔夹<br/>
+                    富的颜色让 LAMY 恒星系列突破了传统<br/>
+                    &nbsp;&nbsp;&nbsp;散发着无限的青春魅力。
+                </p>
+            </div>
+            <div class="s_word">
+                <h3>【狩猎系列限量色墨水笔】</h3>
+                <br/>
+                <p>
+                    &nbsp;色彩丰富，颜色亮丽，不仅是可以作为书<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;写工具，同样是很好的装饰品<br/>
+                    宽大的笔夹设计，可随时夹在包带、牛仔裤、<br/>
+                    &nbsp;T恤袖口上，让您感受创意方便的携带方式<br/>
+                    &nbsp;&nbsp;笔身通体材质采用车用强力ABS材料
+                </p>
+            </div>
+            <div class="s_word">
+                <h3>喜悦系列美术笔</h3>
+                <br/>
+                <p>
+                    &nbsp;&nbsp;用以绘图、写艺术字、艺术签名<br/>
+                    &nbsp;扁平状的笔尖设计，适合书写艺术字<br />
+                    立体感极佳.1、1.5、1.9三种笔尖可供选择<br />
+                    &nbsp;，可书写粗细不等的立体字，让您随时<br />
+                    &nbsp;&nbsp;感受变化的乐趣复古的笔杆设计<br />
+                    ，经典又与众不同，显示出独特的欣赏品味<br />
+                </p>            
+            </div>
+        </div>
+        <div class="s_button">&nbsp;了解详情&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>></div>
+    </div>
+    <div class="penback">
+        <img class="penimg" src="twopens.png" alt="">
+    </div>
+    <div class="form">
+        <div class="form_word"></div>
+        <div class="form_remark">
+            <img class="remark" src="remark.png" alt="">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用令人难以置信的生产技术和坚持极高水平的精准要求，仅使用一种<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;材质，也足以成就出这款永恒的设计。产品本身是体现不同加工程序和<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;制造工艺。手工打磨的亚光拉丝表面充分体现了品牌对细节的注重。</p>
+        </div>
+    </div>
+    <div class="products">
+        <div class="p_title"><img src="Choose.png" alt=""></div>
+        <div class="p_img">
+            <img src="example.png" alt="">
+        </div>
+        <div class="spbutton"><img src="shopping.png" alt=""></div>
+    </div>
+    <div class="news">
+        <div class="newsback">
+            <img src="newsback.png" alt="">
+        </div>
+        <div class="newspen">
+            <img src="news.png" alt="">
+        </div>
+        <div class="introduce">
+            <img src="introduce.png" alt="">
+        </div>
+    </div>
+    <div class="bigimg">
+        <img src="big.png" alt="">
+    </div>
+    <div class="copyright">
+        <p>
+            © 凌美中国 2015 版权所有 不得转载
+        </p>
+    </div>
+</body>
+</html>
